@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BUCC Football Qualification Form</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+.container{
+width:400px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+color:#2c3e50;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#007bff;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0056b3;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>BUCC Football Competition Form</h2>
+
+<form action="result.php" method="post">
+
+<label>Student Name</label>
+<input type="text" name="name" required>
+
+<label>School</label>
+<input type="text" name="school" placeholder="School of Computing" required>
+
+<label>Level</label>
+<select name="level" required>
+<option value="">Select Level</option>
+<option value="100">100 Level</option>
+<option value="200">200 Level</option>
+<option value="300">300 Level</option>
+<option value="400">400 Level</option>
+</select>
+
+<label>Weight (kg)</label>
+<input type="number" name="weight" required>
+
+<button type="submit">Check Qualification</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
